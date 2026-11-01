@@ -13,6 +13,9 @@ if TYPE_CHECKING:
 
 class module_ads(GDO_Module):
 
+    def gdo_dependencies(self) -> list[str]:
+        return ['mira']
+
     def gdo_classes(self) -> list[type[GDO]]:
         return []
 
